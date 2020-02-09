@@ -1,5 +1,3 @@
-'use strict';
-
 module.exports = {
   up: (queryInterface, Sequelize) => {
     /*
@@ -19,5 +17,5 @@ module.exports = {
       Example:
       return queryInterface.dropTable('users');
     */
-  }
+  },
 };
