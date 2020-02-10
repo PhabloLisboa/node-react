@@ -1,3 +1,3 @@
 import server from './app';
 
-server.listen('3030');
+server.listen('3000');
