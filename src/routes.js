@@ -12,6 +12,7 @@ import authMiddleware from './app/middlewares/auth';
 import ProviderController from './app/controllers/ProviderController';
 import ScheduleController from './app/controllers/ScheduleController';
 import NotificationsController from './app/controllers/NotificationsController';
+import AvaliableController from './app/controllers/AvaliableController';
 
 const routes = new Router();
 const upload = multer(multerConfig);
@@ -30,6 +31,7 @@ routes.delete('/appointments/:id', AppointmentsController.delete);
 
 routes.get('/schedule', ScheduleController.index);
 routes.get('/providers', ProviderController.index);
+routes.get('/providers/:providerId/avaliable', AvaliableController.index);
 
 routes.get('/notifications', NotificationsController.index);
 routes.put('/notifications/:id', NotificationsController.update);
